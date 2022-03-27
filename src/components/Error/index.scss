@@ -1,0 +1,29 @@
+@import 'src/styles/shared/colors';
+@import 'src/styles/shared/variables';
+
+.error {
+  background-color: $color-chart;
+  position: fixed;
+  right: $spacing-largeL;
+  top: $spacing-largeL;
+  width: 200px;
+  height: 100px;
+  padding: $spacing-small;
+  border-radius: $spacing-small;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $color-pink;
+  color: $color-white;
+
+  .content {
+    padding: 5px;
+  }
+
+  .close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: $color-error;
+    cursor: pointer;
+  }
+}

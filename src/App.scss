@@ -1,0 +1,15 @@
+@import 'src/styles/shared/colors';
+@import 'src/styles/shared/variables';
+
+.app {
+  background-color: $color-primary;
+  width: 100%;
+  max-width: 1500px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: $spacing-large;
+  font-family: monospace;
+  margin: $spacing-medium auto;
+}

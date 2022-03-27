@@ -1,0 +1,33 @@
+@import 'src/styles/shared/colors';
+@import 'src/styles/shared/variables';
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacing-largeXXL;
+  font-size: $spacing-largeL;
+
+  .lido {
+    color: $color-cian;
+    font-weight: bold;
+  }
+
+  .name {
+    color: $color-white;
+    text-transform: uppercase;
+  }
+
+  .bookmark {
+    color: $color-cian;
+  }
+
+  .problem {
+    cursor: pointer;
+    color: $color-pink;
+    font-weight: bolder;
+    position: absolute;
+    right: 0;
+    font-size: $spacing-large;
+  }
+}

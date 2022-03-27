@@ -1,0 +1,15 @@
+@import 'src/styles/shared/colors';
+@import 'src/styles/shared/variables';
+
+.tooltip {
+  background: $color-chart;
+  color: $color-white;
+  padding: $spacing-medium;
+  border-radius: $spacing-small;
+  border: 2px solid $color-pink;
+
+  .fiber {
+    font-size: $spacing-small;
+    color: $color-pink;
+  }
+}
