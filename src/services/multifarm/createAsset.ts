@@ -1,10 +1,10 @@
 import { Asset, HistoryItem } from "./apiTypes"
 import { format } from "date-fns";
 
-const dateFormat = 'MMM d';
+const dateFormat = 'MMM dd';
 
 const createTvlStakedHistoryItem = (apiHistoryItem: HistoryItem): HistoryItem => {
-    return {date: format(new Date(apiHistoryItem.date), dateFormat), value: Math.round(apiHistoryItem.value/1000000000)};
+    return {date: format(new Date(apiHistoryItem.date), dateFormat), value: +(apiHistoryItem.value/1000000000).toFixed(1)};
 };
 
 const createAprHistoryItem = (apiHistoryItem: HistoryItem, index: number): HistoryItem => {
@@ -12,11 +12,11 @@ const createAprHistoryItem = (apiHistoryItem: HistoryItem, index: number): Histo
 };
 
 const createTvlStakedHistory = (apiHistory: HistoryItem[]): HistoryItem[] => {
-    return apiHistory.map(his => createTvlStakedHistoryItem(his)).slice(0,10).reverse();
+    return apiHistory.map(his => createTvlStakedHistoryItem(his)).reverse();
 };
 
 const createAprHistory = (apiHistory: HistoryItem[]): HistoryItem[] => {
-    return apiHistory.slice(0,10).reverse().map((his, i) => createAprHistoryItem(his, i));
+    return apiHistory.reverse().map((his, i) => createAprHistoryItem(his, i));
 };
 
 const createAsset = (apiAsset: Asset): Asset => {

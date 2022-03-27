@@ -49,7 +49,7 @@ export const Chart: React.FC<Props> = ({ title, data, units }) => {
           <CartesianGrid strokeDasharray="0" stroke="#7976b8" />
           <XAxis
             dataKey="date"
-            interval={0}
+            interval={3}
             tick={{
               fill: '#ffffff',
               fontFamily: 'monospace',
@@ -67,6 +67,7 @@ export const Chart: React.FC<Props> = ({ title, data, units }) => {
             tickFormatter={tickFormatter}
             domain={['dataMin', 'dataMax']}
             axisLine={{ stroke: '#7976b8' }}
+            tickCount={6}
           />
           <Tooltip content={showTooltip} />
           <defs>
