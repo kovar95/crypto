@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.scss';
 import FiberManualRecord from '@material-ui/icons/FiberManualRecord';
 import { ValueType } from 'recharts/types/component/DefaultTooltipContent';

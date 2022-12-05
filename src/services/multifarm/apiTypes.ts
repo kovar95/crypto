@@ -144,6 +144,12 @@ export type Asset = {
     withdrawalFee?:string | null,
     yearlyTokenRewardPool?:number,
     yieldType?:string | null,
+    gaugeData: {
+        gaugeAddress?: string,
+        tvlStaked?: number,
+        tvlStakedHistorical: HistoryItem[],
+    }
+    maxRewardAPRTotalHistory: HistoryItem[],
 };
 
 export interface ApiData {

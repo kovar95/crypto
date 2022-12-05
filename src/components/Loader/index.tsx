@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.scss';
 import { InfinitySpin as Spinner } from 'react-loader-spinner';
 

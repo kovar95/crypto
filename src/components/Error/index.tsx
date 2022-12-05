@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.scss';
 import Close from '@material-ui/icons/Close';
 import useToggle from '../../hooks/useToggle';

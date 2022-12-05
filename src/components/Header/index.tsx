@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.scss';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import BookmarkIcon from '@material-ui/icons/Bookmark';
